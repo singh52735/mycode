@@ -7,5 +7,13 @@
      file:
        # the var "ansible_user" is a host variable AND connection variable
        path: ~/navigation_charts.cfg
+       state: absent  
+   - name: Delete 2nd file
+     file:
+       path: ~/cargo_manifest.txt
+       state: absent
+   - name: delete 3rd file
+     file:     
+       path: ~/orders.txt  
        state: absent
      
