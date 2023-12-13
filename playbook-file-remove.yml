@@ -1,0 +1,11 @@
+---
+- name: A playbook showing the file module
+  hosts: planetexpress
+
+  tasks:
+   - name: Delete files
+     file:
+       # the var "ansible_user" is a host variable AND connection variable
+       path: ~/navigation_charts.cfg
+       state: absent
+     
