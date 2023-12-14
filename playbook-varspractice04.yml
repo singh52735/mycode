@@ -3,7 +3,8 @@
   hosts: localhost
 
   vars:
-    uritouse: "https://statsapi.web.nhl.com/api/v1/teams"
+    #uritouse: "https://statsapi.web.nhl.com/api/v1/teams"
+    uritouse: "https://api.nhle.com/stats/rest/en/team"
 
   tasks:
 
